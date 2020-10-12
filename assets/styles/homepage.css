@@ -1,0 +1,15 @@
+.adresse, .horaire
+{
+    list-style-type: none;
+}
+.presentation
+{
+    color: white;
+    background-color: #2f2f2f;
+    font-size: 15px;
+}
+
+h5
+{
+    text-decoration: underline;
+}

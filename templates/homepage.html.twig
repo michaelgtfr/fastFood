@@ -1,0 +1,47 @@
+{%  extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    {{ encore_entry_link_tags('homepage') }}
+{% endblock %}
+
+{% block body %}
+    <section class="presentation">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-sm-12 text-center">Bonjour, bienvenu sur le site Food truck, Spécialités Réunionnaise.<br/>
+                    Ici vous mangerais des petits plats plein de saveur. N'éxitais pas à utiliser la pré-commande et venir
+                    à l'heure convenu récupérer vos plat.</p>
+                <ul class="adresse col-sm-4 offset-2">
+                    <li>adresse:</li>
+                    <li>25 rue quelque chose</li>
+                    <li>62200 Boulogne sur mer</li>
+                </ul>
+                <ul class="horaire col-sm-4 offset-2">
+                    <li>horaire d'ouverture:</li>
+                    <li>Mardi au Dimanche: 11h - 15h / 18h - 22h</li>
+                    <li>Fermé le Lundi</li>
+                </ul>
+                <p class="col-sm-12 text-center">Vous pouvez m'envoyer un message en utilisant le formulaire ci-dessous.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact bg-light">
+        <div class="container bg-danger rounded mt-2 mb-2">
+            {{ form_start(form) }}
+
+             {{ form(form) }}
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger">Valider</button>
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+    </section>
+{%  endblock %}
+
+{% block javascripts %}
+    {{  parent() }}
+    {{ encore_entry_script_tags('homepage') }}
+{% endblock %}

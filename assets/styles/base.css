@@ -1,0 +1,15 @@
+@import "~bootstrap";
+
+header
+{
+    background-image: url("/img/plat_reunionnais.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+}

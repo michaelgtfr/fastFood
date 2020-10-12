@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('base') }}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                <a class="navbar-brand" href="{{  path('app_homepage') }}">
+                    <img src="{{ asset('img/fond_header.jpg') }}" height="30" class="d-inline-block align-top" alt="">
+                    FoodTruck
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('app_homepage') }}">Page d'accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{  path('app_homepage') }}">Commander</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        {% block body %}
+        {% endblock %}
+        <footer class="text-light">
+            <div class="bg-dark pt-4">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-3 mx-auto">
+                            <h5 class="font-italic">Adresse:</h5>
+                            <ul class="adresse list-unstyled">
+                                <li>25 rue quelque chose</li>
+                                <li>62200 Boulogne sur mer</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mx-auto">
+                            <h5 class="font-italic">Horaire:</h5>
+                            <ul class="horaire list-unstyled">
+                                <li>Mardi au Dimanche: 11h - 15h / 18h - 22h</li>
+                                <li>Fermé le Lundi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-dark copyright row">
+                <p class="text-center col-sm-12">@copyright 2020 email: quelquechose@gmail.com</p>
+            </div>
+        </footer>
+        {% block javascripts %}
+            {{ encore_entry_script_tags('base') }}
+        {% endblock %}
+    </body>
+</html>
