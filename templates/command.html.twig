@@ -4,3 +4,41 @@
     {{  parent() }}
     {{ encore_entry_link_tags('homepage') }}
 {% endblock %}
+
+{% block body %}
+    <section>
+        <div class="products col-sm-8">
+            <h1>Les produits:</h1>
+            {% if products is defined %}
+                <div class="product">
+                    <h2>Les entrées:</h2>
+                    {% for product in products %}
+                            <p>{{ product.getName }}</p>
+                            <p>{{ product.getDescription }}</p>
+                            <p>{{ product.getPrice }} €</p>
+                            {{ form_start(formCommand) }}
+
+                            {{ form(formCommand) }}
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger">Valider</button>
+                            </div>
+
+                        {{ form_end(formCommand) }}
+                    {% endfor %}
+                </div>
+
+            {% else %}
+                <p>Désolé mais la liste n'a pas encore été faite.</p>
+            {%  endif %}
+        </div>
+
+        <div class="panier col-sm-4">
+            {% if panier is not null %}
+                {% for choice in panier %}
+                    <p>{{ choice.getProduct.getName }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

@@ -20,7 +20,7 @@ class DetailCommandRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return DetailCommand[] Returns an array of DetailCommand objects
+    //  * @return DetailForm[] Returns an array of DetailForm objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class DetailCommandRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?DetailCommand
+    public function findOneBySomeField($value): ?DetailForm
     {
         return $this->createQueryBuilder('d')
             ->andWhere('d.exampleField = :val')
