@@ -25,7 +25,7 @@ Encore
      */
     .addEntry('base', './assets/base.js')
     .addEntry('homepage', './assets/homepage.js')
-    //.addEntry('page2', './assets/page2.js')
+    .addEntry('command', './assets/command.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -64,7 +64,7 @@ Encore
     //.enableIntegrityHashes(Encore.isProduction())
 
     // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+    .autoProvidejQuery()
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()

@@ -23,9 +23,14 @@ class DetailForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('quantity', ChoiceType::class, [
-                'label' => 'Nombre :',
-                'choices' => $this->valuesInteger(),
+            ->add('quantity', CollectionType::class, [
+                'entry_type' => ChoiceType::class,
+                'entry_options' => [
+                    'label' => 'Nombre :',
+                    'choices' => $this->valuesInteger(),
+                ],
+                'allow_add' => true,
+                'prototype' => true,
             ])
         ;
     }

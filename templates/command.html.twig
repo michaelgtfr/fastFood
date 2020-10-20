@@ -2,43 +2,120 @@
 
 {% block stylesheets %}
     {{  parent() }}
-    {{ encore_entry_link_tags('homepage') }}
+    {{ encore_entry_link_tags('command') }}
 {% endblock %}
 
 {% block body %}
-    <section>
-        <div class="products col-sm-8">
-            <h1>Les produits:</h1>
-            {% if products is defined %}
-                <div class="product">
-                    <h2>Les entrées:</h2>
-                    {% for product in products %}
-                            <p>{{ product.getName }}</p>
-                            <p>{{ product.getDescription }}</p>
-                            <p>{{ product.getPrice }} €</p>
-                            {{ form_start(formCommand) }}
+    <section class="container-fluid">
+        <div class="row">
+            <div class="product-list col-sm-8">
+                <h1>Les produits:</h1>
+                {% if products is defined %}
+                    <div class="product">
+                        {{ form_start(formCommand) }}
 
-                            {{ form(formCommand) }}
+                        {# store the prototype on the data-prototype attribute #}
+                        <ul id="quantity-fields-list"
+                            data-prototype="{{ form_widget(formCommand.quantity.vars.prototype)|e }}"
+                            data-widget-tags="{{ '<div></div>'|e }}">
+                            {% for commandField in formCommand.quantity %}
+                                <li>
+                                    {{ form_errors(commandField) }}
+                                    {{ form_widget(commandField) }}
+                                </li>
+                            {% endfor %}
+                        </ul>
 
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-danger">Valider</button>
-                            </div>
+                        {% for product in products %}
+                            {% if product.getDesignation == 1 %}
+                                <div class="row">
+                                    <h2 class="col-sm-12 text-center">Les entrées:</h2>
+                                    <p class="col-sm-7 order-1">{{ product.getName }}</p>
+                                    <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
+                                    <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
+
+                                    <div class="col-sm-2 order-3 add-another-collection-widget"
+                                         data-widget-counter="{{ product.getId }}"
+                                         data-list-selector="#quantity-fields-list">
+                                    </div>
+
+                                    <div class="text-center col-sm-2 order-4">
+                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                    </div>
+                                </div>
+
+                            {% endif %}
+                        {% endfor %}
+
+                        {% for product in products %}
+                            {% if product.getDesignation == 2 %}
+                                <div class="row">
+                                    <h2 class="col-sm-12 text-center">Les plats:</h2>
+                                    <p class="col-sm-7 order-1">{{ product.getName }}</p>
+                                    <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
+                                    <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
+
+                                    <div class="col-sm-2 order-3 add-another-collection-widget"
+                                         data-widget-counter="{{ product.getId }}"
+                                         data-list-selector="#quantity-fields-list">
+                                    </div>
+
+                                    <div class="text-center col-sm-2 order-4">
+                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+
+
+                        {% for product in products %}
+                            {% if product.getDesignation == 3 %}
+                                <div class="row">
+                                    <h2 class="col-sm-12 text-center">Les désserts:</h2>
+                                    <p class="col-sm-7 order-1">{{ product.getName }}</p>
+                                    <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
+                                    <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
+
+                                    <div class="col-sm-2 order-3 add-another-collection-widget"
+                                         data-widget-counter="{{ product.getId }}"
+                                         data-list-selector="#quantity-fields-list">
+                                    </div>
+
+                                    <div class="text-center col-sm-2 order-4">
+                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
 
                         {{ form_end(formCommand) }}
-                    {% endfor %}
+                    </div>
+
+                {% else %}
+                    <p>Désolé mais la liste n'a pas encore été faite.</p>
+                {%  endif %}
+            </div>
+
+            <!-- panier part -->
+            <div class="panier col-sm-4 bg-danger">
+                <div class="row">
+                    <h3 class="col-sm-12 text-center">Panier</h3>
+                    {% if panier is not null %}
+                        {% for choice in panier %}
+                            <p class="col-sm-12">{{ choice.getProduct.getName }}</p>
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="col-sm-12 align-self-end">
+                        <button type="submit" class="btn btn-danger">Valider</button>
+                    </div>
                 </div>
-
-            {% else %}
-                <p>Désolé mais la liste n'a pas encore été faite.</p>
-            {%  endif %}
-        </div>
-
-        <div class="panier col-sm-4">
-            {% if panier is not null %}
-                {% for choice in panier %}
-                    <p>{{ choice.getProduct.getName }}</p>
-                {% endfor %}
-            {% endif %}
+            </div>
         </div>
     </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('command') }}
 {% endblock %}
