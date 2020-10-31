@@ -11,3 +11,5 @@ import './styles/base.css';
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 import $ from 'jquery';
 
+//font-awesome
+import '@fortawesome/fontawesome-free/js/all.min.js';

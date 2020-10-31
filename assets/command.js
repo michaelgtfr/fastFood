@@ -19,4 +19,61 @@ jQuery(document).ready(function () {
         let newElem = jQuery(list.attr('data-widget-tags')).html(newWidget);
         newElem.appendTo(another);
     });
+
+    jQuery(".button_add_product").click( function(e) {
+        e.preventDefault();
+        let add_product_button_id = $(this).attr("name");
+        let product_quantity = document.querySelector("#detail_form_quantity_" + add_product_button_id).value;
+
+        $.ajax({
+            url: "/addShoppingCart",
+            type: "POST",
+            data: "id=" + add_product_button_id +
+                "&quantity=" + product_quantity,
+            dataType: "text",
+
+            success(codeHtml) {
+                let product_in_the_basket = JSON.parse(codeHtml);
+                let price_products = product_in_the_basket.price * product_quantity;
+
+                jQuery(".panier_description").after("" +
+                    "<div class=\"row col-sm-12\">" +
+                    "<p class=\"col-sm-4\">" + product_in_the_basket.name + "</p>" +
+                    "<p class=\"col-sm-4\">" + price_products + "</p>" +
+                    "<button class=\"button_delete_shopping btn btn-warning col-sm-4\" name=\"" + add_product_button_id + "\">" +
+                    "<i class=\"far fa-trash-alt\"></i></button>" +
+                    "</div>"
+                );
+                $(this).ready(function (){
+                    buttonDeleted();
+                });
+            },
+            error(content, status) {
+                console.log(content, status);
+            },
+        });
+    });
+    // function delete of button
+    function buttonDeleted() {
+        jQuery(".button_delete_shopping").click( function(e) {
+            e.preventDefault();
+            console.log("ip man2, dorman, the good criminal, triple frontiere");
+            let delete_product_button_id = $(this).attr("name");
+
+            $.ajax({
+                url: "/deleteProductShoppingCart",
+                type: "POST",
+                data: "id=" + delete_product_button_id,
+                dataType: "text",
+
+                success(codeHtml) {
+                    let response = JSON.parse(codeHtml);
+                    console.log(response);
+                },
+                error(content, status) {
+                    console.log(content, status);
+                },
+            });
+        });
+    };
 });

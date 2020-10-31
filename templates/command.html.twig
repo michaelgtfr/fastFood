@@ -40,7 +40,8 @@
                                     </div>
 
                                     <div class="text-center col-sm-2 order-4">
-                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                        <button name="{{ product.getId }}"
+                                                class="button_add_product btn btn-danger">Ajouter</button>
                                     </div>
                                 </div>
 
@@ -50,7 +51,7 @@
                         {% for product in products %}
                             {% if product.getDesignation == 2 %}
                                 <div class="row">
-                                    <h2 class="col-sm-12 text-center">Les plats:</h2>
+                                    <h2 class="col-sm-12 text-center">Les entrées:</h2>
                                     <p class="col-sm-7 order-1">{{ product.getName }}</p>
                                     <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
                                     <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
@@ -61,7 +62,8 @@
                                     </div>
 
                                     <div class="text-center col-sm-2 order-4">
-                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                        <button name="{{ product.getId }}"
+                                                class="button_add_product btn btn-danger">Ajouter</button>
                                     </div>
                                 </div>
                             {% endif %}
@@ -71,7 +73,7 @@
                         {% for product in products %}
                             {% if product.getDesignation == 3 %}
                                 <div class="row">
-                                    <h2 class="col-sm-12 text-center">Les désserts:</h2>
+                                    <h2 class="col-sm-12 text-center">Les entrées:</h2>
                                     <p class="col-sm-7 order-1">{{ product.getName }}</p>
                                     <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
                                     <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
@@ -82,7 +84,8 @@
                                     </div>
 
                                     <div class="text-center col-sm-2 order-4">
-                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                        <button name="{{ product.getId }}"
+                                                class="button_add_product btn btn-danger">Ajouter</button>
                                     </div>
                                 </div>
                             {% endif %}
@@ -100,14 +103,18 @@
             <div class="panier col-sm-4 bg-danger">
                 <div class="row">
                     <h3 class="col-sm-12 text-center">Panier</h3>
-                    {% if panier is not null %}
-                        {% for choice in panier %}
-                            <p class="col-sm-12">{{ choice.getProduct.getName }}</p>
-                        {% endfor %}
-                    {% endif %}
+                    <div class="col-sm-12 panier_description">
+                        {% if panier is not null %}
+                            {% for choice in panier %}
+                                <p class="col-sm-12">{{ choice.getProduct.getName }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
 
                     <div class="col-sm-12 align-self-end">
-                        <button type="submit" class="btn btn-danger">Valider</button>
+                        <form method="post" action="{{ path('app_validate_shopping_card') }}">
+                            <button type="submit" class="btn btn-danger">Valider</button>
+                        </form>
                     </div>
                 </div>
             </div>
