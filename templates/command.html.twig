@@ -51,7 +51,7 @@
                         {% for product in products %}
                             {% if product.getDesignation == 2 %}
                                 <div class="row">
-                                    <h2 class="col-sm-12 text-center">Les entrées:</h2>
+                                    <h2 class="col-sm-12 text-center">Les plats:</h2>
                                     <p class="col-sm-7 order-1">{{ product.getName }}</p>
                                     <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
                                     <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
@@ -73,7 +73,7 @@
                         {% for product in products %}
                             {% if product.getDesignation == 3 %}
                                 <div class="row">
-                                    <h2 class="col-sm-12 text-center">Les entrées:</h2>
+                                    <h2 class="col-sm-12 text-center">Les desserts:</h2>
                                     <p class="col-sm-7 order-1">{{ product.getName }}</p>
                                     <p class="col-sm-6 order-5">{{ product.getDescription }}</p>
                                     <p class="col-sm-1 order-2 price">{{ product.getPrice }} €</p>
