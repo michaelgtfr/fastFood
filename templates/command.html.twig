@@ -106,7 +106,13 @@
                     <div class="col-sm-12 panier_description">
                         {% if panier is not null %}
                             {% for choice in panier %}
-                                <p class="col-sm-12">{{ choice.getProduct.getName }}</p>
+                            <div class="row col-sm-12">
+                                <p class="col-sm-4">{{ choice.getProduct.getName }}</p>
+                                <p class="col-sm-4">{{ choice.getProduct.getPrice }}</p>
+                                <button class="button_delete_shopping btn btn-warning col-sm-4"
+                                        name={{ choice.getProduct.getId }}>
+                                <i class="far fa-trash-alt"></i></button>
+                            </div>
                             {% endfor %}
                         {% endif %}
                     </div>
