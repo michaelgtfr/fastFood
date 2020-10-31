@@ -48,7 +48,7 @@ class CommandController
         }
 
         //retrieving the order if it exists in session
-        $panier = $request->getSession()->get('command') ?? null;
+        $panier = $request->getSession()->get('products') ?? null;
 
         $render = $twig->render('command.html.twig',[
             'formCommand' => $formCommand->createView(),

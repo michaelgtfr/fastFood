@@ -18,6 +18,8 @@ class DeleteProductShoppingCartController
 {
     private $id;
 
+    private $products = [];
+
     /**
      * @Route("/deleteProductShoppingCart", name="app_delete_asynchonous")
      * @param Request $request
@@ -29,7 +31,9 @@ class DeleteProductShoppingCartController
         if($request->isXmlHttpRequest()) {
             $this->id = htmlspecialchars($request->get('id'));
 
-            $session->remove($this->id);
+            $this->products = $session->get('products');
+            unset($this->products[$this->id]);
+            $session->set('products', $this->products);
 
             return new Response();
         }

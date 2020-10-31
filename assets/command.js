@@ -1,6 +1,7 @@
 import './styles/command.css';
 
 jQuery(document).ready(function () {
+    buttonDeleted();
     jQuery('.add-another-collection-widget').append(function (e) {
         let another = jQuery(jQuery(this));
         let list = jQuery(jQuery(this).attr('data-list-selector'));
@@ -57,7 +58,7 @@ jQuery(document).ready(function () {
     function buttonDeleted() {
         jQuery(".button_delete_shopping").click( function(e) {
             e.preventDefault();
-            console.log("ip man2, dorman, the good criminal, triple frontiere");
+            let description_part_product = $(this).parent();
             let delete_product_button_id = $(this).attr("name");
 
             $.ajax({
@@ -66,9 +67,8 @@ jQuery(document).ready(function () {
                 data: "id=" + delete_product_button_id,
                 dataType: "text",
 
-                success(codeHtml) {
-                    let response = JSON.parse(codeHtml);
-                    console.log(response);
+                success() {
+                    description_part_product.remove();
                 },
                 error(content, status) {
                     console.log(content, status);

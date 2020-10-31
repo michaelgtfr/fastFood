@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf03d2da-14b4-49f5-9017-f0c229f268b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ShoppingCardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/practice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/command.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/command.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CommandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CommandController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/command.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/command.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/command.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+            <state relative-caret-position="287">
+              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -44,11 +34,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="561">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="e#117#162#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/command.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="102" column="51" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -60,63 +59,6 @@
               <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#117#162#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
-              <folding>
-                <element signature="e#117#146#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-421">
-              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/command.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
-              <folding>
-                <element signature="e#5833#5859#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/CommandController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-              <folding>
-                <element signature="e#117#146#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/HomepageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="55" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="55" />
-              <folding>
-                <element signature="e#117#140#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,12 +96,12 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/assets/styles/base.css" />
         <option value="$PROJECT_DIR$/assets/base.js" />
-        <option value="$PROJECT_DIR$/assets/command.js" />
-        <option value="$PROJECT_DIR$/src/Controller/CommandController.php" />
-        <option value="$PROJECT_DIR$/templates/command.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php" />
         <option value="$PROJECT_DIR$/src/Controller/ShoppingCardController.php" />
         <option value="$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php" />
+        <option value="$PROJECT_DIR$/templates/command.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/CommandController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php" />
+        <option value="$PROJECT_DIR$/assets/command.js" />
       </list>
     </option>
   </component>
@@ -357,12 +299,12 @@
       <workItem from="1603470441799" duration="8347000" />
       <workItem from="1603529774690" duration="1129000" />
       <workItem from="1603619727291" duration="2865000" />
-      <workItem from="1604131996365" duration="9488000" />
+      <workItem from="1604131996365" duration="15639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130045000" />
+    <option name="totallyTimeSpent" value="136196000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +319,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.37114093" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.37114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021097" side_tool="true" weight="0.27919462" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -488,9 +430,6 @@
     <entry file="file://$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/User/UserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -547,16 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/homepage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="e#13#27#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,10 +624,20 @@
     <entry file="file://$PROJECT_DIR$/../../../diplome php symfony/projet 6/2-Developpement_site_web/1-code_source/SnowTricks/public/js/functionJs/addVideoAsynchronous.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/command.js">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+        <state relative-caret-position="-1367">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="e#117#146#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -712,30 +651,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homepage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#13#27#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/CommandController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="456">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding>
             <element signature="e#117#146#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/command.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+        <state relative-caret-position="561">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
-            <element signature="e#5833#5859#0#Twig" expanded="true" />
+            <element signature="e#117#162#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -749,23 +694,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php">
+    <entry file="file://$PROJECT_DIR$/templates/command.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#117#162#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="102" column="51" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php">
+    <entry file="file://$PROJECT_DIR$/assets/command.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
-          <folding>
-            <element signature="e#117#146#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="287">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
         </state>
       </provider>
     </entry>

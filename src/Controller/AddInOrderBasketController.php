@@ -45,7 +45,6 @@ class AddInOrderBasketController
 
             $this->products = $session->get('products');
             $this->products[$this->id] = $detailCommand;
-
             $session->set('products', $this->products);
 
             $data = [
