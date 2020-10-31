@@ -13,6 +13,10 @@
         <server name="SHELL_VERBOSITY" value="-1" />
         <server name="SYMFONY_PHPUNIT_REMOVE" value="" />
         <server name="SYMFONY_PHPUNIT_VERSION" value="7.5" />
+
+        <!-- doctrine/doctrine-bundle -->
+        <env name="DATABASE_URL" value="DATABASE_URL=mysql://root:@127.0.0.1:3306/practicefastfoodtest"/>
+        <!-- doctrine/doctrine-bundle -->
     </php>
 
     <testsuites>
@@ -30,4 +34,8 @@
     <listeners>
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
     </listeners>
+
+    <extensions>
+        <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />
+    </extensions>
 </phpunit>
