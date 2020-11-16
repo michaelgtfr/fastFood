@@ -17,6 +17,8 @@ class AppFixtures extends Fixture
         $product->setAvailability(1);
         $product->setPrice('2');
 
+        $this->setReference('addInOrderBasketController', $product);
+
         $manager->persist($product);
 
         $manager->flush();

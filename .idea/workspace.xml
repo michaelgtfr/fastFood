@@ -2,26 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf03d2da-14b4-49f5-9017-f0c229f268b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/liip_test_fixture.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controller/CommandControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controller/HomepageControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Entity/CommandTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Entity/ContactTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Entity/DetailCommandTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Entity/ProductTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Entity/UserTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Form/DetailFormTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controller/AddInOrderBasketControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controller/DeleteProductShoppingCartControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/.preload.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/.preload.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/AddInOrderBasketController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/AddInOrderBasketController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/CommandController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/CommandController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/DeleteProductShoppingCartController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/DeleteProductShoppingCartController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/HomepageController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/HomepageController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/SecurityController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/SecurityController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/ShoppingCardController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/ShoppingCardController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Controller/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/DataFixtures/AppFixtures.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/DataFixtures/AppFixtures.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/DataFixtures/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/DataFixtures/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/DataFixtures/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/DataFixtures/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/Command.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/Command.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/Contact.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/Contact.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/DetailCommand.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/DetailCommand.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/Product.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/Product.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/User.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/User.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Entity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Entity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Form/ContactForm.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Form/ContactForm.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Form/DetailForm.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Form/DetailForm.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Form/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Form/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Kernel.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Kernel.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/CommandRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/CommandRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/ContactRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/ContactRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/DetailCommandRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/DetailCommandRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/ProductRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/ProductRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/UserRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/UserRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Repository/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Repository/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Security/LoginFormAuthenticator.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Security/LoginFormAuthenticator.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Security/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Security/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/Security/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/Security/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test-coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test-coverage/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,24 +56,12 @@
     <favorites_list name="practice" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/CommandController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-              <folding>
-                <element signature="e#117#146#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Controller/CommandControllerTest.php">
+        <entry file="file://$PROJECT_DIR$/tests/Controller/AddInOrderBasketControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+            <state relative-caret-position="425">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="37" selection-end-column="74" />
               <folding>
                 <element signature="e#123#156#0#PHP" expanded="true" />
               </folding>
@@ -108,12 +116,14 @@
         <option value="$PROJECT_DIR$/tests/Entity/ProductTest.php" />
         <option value="$PROJECT_DIR$/tests/Controller/HomepageControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/tests/Controller/CommandControllerTest.php" />
         <option value="$PROJECT_DIR$/.env.test" />
         <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/config/packages/liip_test_fixture.yaml" />
         <option value="$PROJECT_DIR$/config/packages/test/doctrine.yaml" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
+        <option value="$PROJECT_DIR$/tests/Controller/AddInOrderBasketControllerTest.php" />
+        <option value="$PROJECT_DIR$/tests/Controller/DeleteProductShoppingCartControllerTest.php" />
       </list>
     </option>
   </component>
@@ -214,7 +224,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-20" />
-    <option name="y" value="-24" />
+    <option name="y" value="-25" />
     <option name="width" value="1940" />
     <option name="height" value="1100" />
   </component>
@@ -223,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,25 +243,13 @@
             <path>
               <item name="practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice" type="b2602c69:ProjectViewProjectNode" />
@@ -263,12 +260,30 @@
             <path>
               <item name="practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="test-coverage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,12 +350,13 @@
       <workItem from="1603619727291" duration="2865000" />
       <workItem from="1604131996365" duration="24168000" />
       <workItem from="1604216710186" duration="8547000" />
-      <workItem from="1604243664817" duration="7328000" />
+      <workItem from="1604243664817" duration="14103000" />
+      <workItem from="1605540699103" duration="1766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160600000" />
+    <option name="totallyTimeSpent" value="169141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,10 +368,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.19395973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.19664429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021097" side_tool="true" weight="0.27919462" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,27 +417,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/styles/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="214" column="20" selection-start-line="214" selection-start-column="20" selection-end-line="214" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/command.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -470,16 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="e#117#146#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/homepage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -493,27 +478,10 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ShoppingCardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#117#162#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/command.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -667,37 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/browser-kit/AbstractBrowser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="340" column="20" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/command.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-          <folding>
-            <element signature="e#117#162#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -712,26 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CommandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-          <folding>
-            <element signature="e#117#146#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#36#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/bundles.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -739,13 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" selection-start-line="22" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -762,13 +672,7 @@
     <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/test/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/test/doctrine.yaml" />
     <entry file="file://$PROJECT_DIR$/.env.test">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -776,10 +680,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CommandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="e#117#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/command.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/browser-kit/AbstractBrowser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5593">
+          <caret line="340" column="20" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/liip/test-fixtures-bundle/src/Test/FixturesTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1358">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding>
+            <element signature="e#300#359#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ShoppingCardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#117#162#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Controller/CommandControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="204">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#123#156#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddInOrderBasketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="47" column="55" lean-forward="true" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+          <folding>
+            <element signature="e#117#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#36#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DeleteProductShoppingCartController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="e#117#162#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Controller/DeleteProductShoppingCartControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#123#156#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Controller/AddInOrderBasketControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="37" selection-end-column="74" />
           <folding>
             <element signature="e#123#156#0#PHP" expanded="true" />
           </folding>
