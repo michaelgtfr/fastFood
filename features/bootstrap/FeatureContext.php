@@ -1,13 +1,13 @@
 <?php
 
 use Behat\Behat\Context\Context;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
+use Behat\MinkExtension\Context\MinkContext;
+use DAMA\DoctrineTestBundle\Doctrine\DBAL\StaticDriver;
 
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext implements Context
+class FeatureContext extends MinkContext implements Context
 {
     /**
      * Initializes context.
@@ -18,5 +18,38 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
+    }
+
+    /**
+     * @BeforeSuite
+     */
+    public static function beforeSuite()
+    {
+        StaticDriver::setKeepStaticConnections(true);
+    }
+
+    /**
+     * @BeforeScenario
+     */
+    public function beforeScenario()
+    {
+        StaticDriver::beginTransaction();
+        $this->user = null;
+    }
+
+    /**
+     * @AfterScenario
+     */
+    public function afterScenario()
+    {
+        StaticDriver::rollBack();
+    }
+
+    /**
+     * @AfterSuite
+     */
+    public static function afterSuite()
+    {
+        StaticDriver::setKeepStaticConnections(false);
     }
 }
