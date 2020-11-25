@@ -109,7 +109,8 @@
                             <div id="shopping_class_{{ choice.getProduct.getId }}" class="product_selected row col-sm-12">
                                 <p class="col-sm-4">{{ choice.getProduct.getName }}</p>
                                 <p class="col-sm-4">{{ choice.getProduct.getPrice * choice.getQuantity }}</p>
-                                <button class="button_delete_shopping btn btn-warning col-sm-4"
+                                <button id="delete_shopping_{{ choice.getProduct.getId }}"
+                                        class="button_delete_shopping btn btn-warning col-sm-4"
                                         name={{ choice.getProduct.getId }}>
                                 <i class="far fa-trash-alt"></i></button>
                             </div>

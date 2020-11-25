@@ -45,7 +45,8 @@ jQuery(document).ready(function () {
                     "<div id=\"shopping_class_" + add_product_button_id + "\" class=\"product_selected row col-sm-12\">" +
                     "<p class=\"col-sm-4\">" + product_in_the_basket.name + "</p>" +
                     "<p class=\"col-sm-4\">" + price_products + "</p>" +
-                    "<button class=\"button_delete_shopping btn btn-warning col-sm-4\" name=\"" + add_product_button_id + "\">" +
+                    "<button id=\"delete_shopping_"+ add_product_button_id + "\" " +
+                    "class=\"button_delete_shopping btn btn-warning col-sm-4\" name=\"" + add_product_button_id + "\">" +
                     "<i class=\"far fa-trash-alt\"></i></button>" +
                     "</div>"
                 );
