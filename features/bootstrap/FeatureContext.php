@@ -94,6 +94,7 @@ class FeatureContext extends MinkContext implements Context
     {
         StaticDriver::rollBack();
         $this->deleteDataFixture();
+        $this->getMink()->restartSessions();
     }
 
     /**
