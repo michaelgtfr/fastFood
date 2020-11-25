@@ -21,3 +21,10 @@ Feature: Product basket
   Scenario: presence of a product already in the shopping cart
     Given I come back to the order page after leaving it
     Then I should see else the product in my product basket
+
+    @javascript
+    Scenario: change the quantity of the chosen product
+      Given I am on the "/command" page
+      And I want "2" chosen product
+      When I click "Ajouter"
+      Then I should see "4" of the products in my product basket

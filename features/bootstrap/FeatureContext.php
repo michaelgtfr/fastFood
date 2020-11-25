@@ -188,4 +188,21 @@ class FeatureContext extends MinkContext implements Context
     {
         $this->assertResponseNotContains('shopping_class_'.$this->idProductFixture);
     }
+
+    /**
+     * @Given I want :number chosen product
+     */
+    public function iWantChosenProduct($number)
+    {
+        $this->selectOption('detail_form_quantity_'.$this->idProductFixture, $number);
+    }
+
+    /**
+     * @Then I should see :number of the products in my product basket
+     */
+    public function iShouldSeeOfTheProductsInMyProductBasket($number)
+    {
+        $this->assertResponseContains($number);
+    }
+
 }
