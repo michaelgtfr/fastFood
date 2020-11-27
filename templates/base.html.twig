@@ -30,8 +30,24 @@
                 </div>
             </nav>
         </header>
+        <section>
+            <!--flash message-->
+            {% for message in app.flashes('success') %}
+                <div class = "alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            {% for message in app.flashes('error') %}
+                <div class = "alert alert-danger">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </section>
+
         {% block body %}
         {% endblock %}
+
         <footer class="text-light">
             <div class="bg-dark pt-4">
                 <div class="container ">
