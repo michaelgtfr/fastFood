@@ -48,6 +48,7 @@ class SummaryAndOrderingInformationController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            echo 'fonctionne';
         }
 
         if($products == null) {
