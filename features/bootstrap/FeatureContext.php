@@ -4,6 +4,7 @@ namespace App\Behat\bootstrap;
 
 use App\Entity\Product;
 use Behat\Behat\Context\Context;
+use Behat\Mink\Driver\GoutteDriver;
 use Behat\MinkExtension\Context\MinkContext;
 use DAMA\DoctrineTestBundle\Doctrine\DBAL\StaticDriver;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -33,8 +34,10 @@ class FeatureContext extends MinkContext implements Context
      * You can also pass arbitrary arguments to the
      * context constructor through behat.yml.
      * @param KernelInterface $kernel
+     * @param \Behat\Mink\Session $session
+     * @param RouterInterface $router
      */
-    public function __construct(KernelInterface $kernel, \Behat\Mink\Session $session, RouterInterface $router)
+    public function __construct(KernelInterface $kernel, \Behat\Mink\Session $session, RouterInterface $router )
     {
         $this->kernel = $kernel;
         $this->session = $session;
@@ -94,7 +97,7 @@ class FeatureContext extends MinkContext implements Context
     {
         StaticDriver::rollBack();
         $this->deleteDataFixture();
-        $this->getMink()->restartSessions();
+        $this->session->restart();
     }
 
     /**
@@ -134,6 +137,7 @@ class FeatureContext extends MinkContext implements Context
 
     /**
      * @Given I must see written on the page :arg1
+     * @param $arg1
      */
     public function iMustSeeWrittenOnThePage($arg1)
     {
@@ -171,15 +175,11 @@ class FeatureContext extends MinkContext implements Context
      */
     public function iComeBackToTheOrderPageAfterLeavingIt()
     {
-        $em = $this->kernel->getContainer()->get('doctrine');
-
-        $product = $em->getRepository(Product::class)->find($this->idProductFixture);
-        $products[$this->idProductFixture] = $product;
-        $session = new Session();
-        $session->start();
-        $session->set('Products', $products);
-
-        $this->session->visit($this->router->generate('app_command'));
+        $this->iAmOnThePage('/command');
+        $this->iClick("Ajouter");
+        $this->iShouldSeeTheProductInMyProductBasket();
+        $this->iAmOnThePage('/');
+        $this->iAmOnThePage('/command');
     }
 
     /**
@@ -187,7 +187,7 @@ class FeatureContext extends MinkContext implements Context
      */
     public function iShouldSeeElseTheProductInMyProductBasket()
     {
-        $this->assertResponseNotContains('shopping_class_'.$this->idProductFixture);
+        $this->assertResponseContains('shopping_class_'.$this->idProductFixture);
     }
 
     /**
@@ -206,4 +206,14 @@ class FeatureContext extends MinkContext implements Context
         $this->assertResponseContains($number);
     }
 
+    /**
+     * @Given After validating my shopping cart
+     */
+    public function afterValidatingMyShoppingCart()
+    {
+        $this->iAmOnThePage('/command');
+        $this->iClick("Ajouter");
+        $this->iShouldSeeTheProductInMyProductBasket();
+        $this->iClick('Valider');
+    }
 }
