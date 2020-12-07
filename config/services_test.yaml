@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\Behat\bootstrap\FeatureContext:
+        public: true
+        arguments:
+            - "@kernel"

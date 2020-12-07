@@ -14,9 +14,11 @@ use App\Entity\Product;
 use App\Form\DetailForm;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\FormFactoryInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Twig\Environment;
 
 class CommandController
@@ -32,20 +34,15 @@ class CommandController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function command(Request $request, Environment $twig, EntityManagerInterface $em, FormFactoryInterface $formFactory)
+    public function command(Request $request, Environment $twig, EntityManagerInterface $em,
+                            FormFactoryInterface $formFactory, UrlGeneratorInterface $generator)
     {
-
         $command = new DetailCommand();
         $formCommand = $formFactory->create(DetailForm::class, $command);
 
         //recovery the product list
         $products = $em->getRepository(Product::class)
             ->findAll();
-
-        $formCommand->handleRequest($request);
-        if ($formCommand->isSubmitted() && $formCommand->isValid()) {
-            dd($request);
-        }
 
         //retrieving the order if it exists in session
         $panier = $request->getSession()->get('products') ?? null;
